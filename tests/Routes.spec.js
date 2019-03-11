@@ -1,5 +1,5 @@
 describe('Routes', function () {
-	var $route;
+	let $route;
 
 	beforeEach(module('app'));
 
@@ -9,9 +9,9 @@ describe('Routes', function () {
 			$route = $injector.get('$route');
 		}));
 
-		var state;
+		let state;
 		it('should have the correct URL', function () {
-			state = $route.routes['/user/:id'];
+			state = $route.routes['/user/:name'];
 
 			expect(state).toBeDefined();
 		});
