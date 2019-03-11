@@ -1,4 +1,9 @@
-function UserController() {
+function UserController(user) {
+
+	let ctrl = this
+
+	ctrl.user = user.data
+
 }
 
 angular
